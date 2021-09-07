@@ -1,0 +1,26 @@
+,
+    "esmodules": [
+        "kindgom.js"
+    ],
+    "styles":[
+        "kingdom.css"
+    ],
+    "packs": [
+        {
+          "name": "kingdom-buildings",
+          "label": "Pathfinder Kingdom buildings",
+          "system": ["pf1"],
+          "path": "./packs/buildings.db",
+          "entity": "Actor"
+        }
+    ],
+    "dependencies": [
+        {
+          "name": "pf-content",
+          "manifest": "https://raw.githubusercontent.com/baileymh/pf1e-content/main/module.json"
+        },
+        {
+          "name": "pf1",
+          "type": "system"
+        }
+        ]

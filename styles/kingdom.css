@@ -1,0 +1,6 @@
+.body-details p input.stat, .header-details .header-top input.stat{
+width: 50px;
+}
+.header-details .header-top input.name{
+width: 100px;
+}

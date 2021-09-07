@@ -1,0 +1,30 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+     <section class="primary-body">
+         <header class="sheet-header flexrow">
+        <img class="profile" src="{{actor.img}}" title="{{actor.name}}" data-edit="img"/>
+        <div class="header-details flexcol">
+        
+          <div class="header-top flexrow">
+            <h1 class="">
+            <label for="name">Building name</label>
+              <input class="name" name="name" type="text" value="{{actor.name}}" placeholder="{{localize "PF1.CharacterName"}}"/>
+              <label for="data.kingdom.cost">Cost</label>
+              <input class="stat" name="data.kingdom.cost" type="number" value="{{data.data.kingdom.cost}}" placeholder="BP" data-dtype="Number"/>
+              <label for="data.kingdom.lots">Lots</label>
+              <input class="stat" name="data.kingdom.lots" type="number" value="{{data.data.kingdom.lots}}" placeholder="Lots" data-dtype="Number"/>
+            </h1>
+          </div>
+          </div>
+        </header>
+         <div class="body-details">
+             <p>
+                 <b>Kingdom</b>
+                 <label for="data.kingdom.kingdom.economy">Economy</label> <input class="stat" name="data.kingdom.kingdom.economy" type="number" value="{{data.data.kingdom.kingdom.economy}}" data-dtype="Number" />
+                 <label for="data.kingdom.kingdom.loyalty">Loyalty</label> <input class="stat" name="data.kingdom.kingdom.loyalty" type="number" value="{{data.data.kingdom.kingdom.loyalty}}" data-dtype="Number" />
+                 <label for="data.kingdom.kingdom.security">Security</label> <input class="stat" name="data.kingdom.kingdom.security" type="number" value="{{data.data.kingdom.kingdom.security}}" data-dtype="Number" />
+                 <label for="data.kingdom.kingdom.unrest">Unrest</label> <input class="stat" name="data.kingdom.kingdom.unrest" type="number" value="{{data.data.kingdom.kingdom.unrest}}" data-dtype="Number" />
+                 <label for="data.kingdom.kingdom.fame">Fame</label> <input class="stat" name="data.kingdom.kingdom.fame" type="number" value="{{data.data.kingdom.kingdom.fame}}" data-dtype="Number" />
+             </p>
+         </div>
+     </section>
+</form>
