@@ -1,0 +1,39 @@
+{
+    "name": "kingdom-mgmt",
+    "title": "PF1 Kingdom Management FVTT Module",
+    "description": "A module created to work with the kingdom management system for Pathfinder 1e.",
+    "author": "Gagn-Associates",
+    "version": "0.1.0",
+    "minimumCoreVersion": "0.8.0",
+    "compatibleCoreVersion": "0.8.9",
+    "systems": [
+        "pf1"
+    ],
+    "esmodules": [
+        "./scripts/kingdom.js"
+    ],
+    "styles": [
+        "./styles/kingdom.css"
+    ],
+    "packs": [
+        {
+            "name": "kingdom-buildings",
+            "label": "Pathfinder Kingdom buildings",
+            "system": "pf1",
+            "path": "/packs/buildings.db",
+            "entity": "Actor",
+            "module": "kingdom-mgmt",
+            "private": false
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "pf-content",
+            "manifest": "https://raw.githubusercontent.com/baileymh/pf1e-content/main/module.json"
+        },
+        {
+            "name": "pf1",
+            "type": "system"
+        }
+    ]
+}
