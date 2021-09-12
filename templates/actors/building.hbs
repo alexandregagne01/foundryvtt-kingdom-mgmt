@@ -1,4 +1,4 @@
-<form class="{{cssClass}} flexcol" autocomplete="off">
+<form class="{{cssClass}} pf1-sheet flexcol" autocomplete="off">
      <section class="primary-body">
          <header class="sheet-header flexrow">
         <img class="profile" src="{{actor.img}}" title="{{actor.name}}" data-edit="img"/>
@@ -16,7 +16,7 @@
           </div>
           </div>
         </header>
-         <div class="body-details">
+         <div class="body-details" data-group="primary">
              <p>
                  <b>Kingdom</b>
                  <label for="data.kingdom.kingdom.economy">Economy</label> <input class="stat" name="data.kingdom.kingdom.economy" type="number" value="{{data.data.kingdom.kingdom.economy}}" data-dtype="Number" />
@@ -25,6 +25,27 @@
                  <label for="data.kingdom.kingdom.unrest">Unrest</label> <input class="stat" name="data.kingdom.kingdom.unrest" type="number" value="{{data.data.kingdom.kingdom.unrest}}" data-dtype="Number" />
                  <label for="data.kingdom.kingdom.fame">Fame</label> <input class="stat" name="data.kingdom.kingdom.fame" type="number" value="{{data.data.kingdom.kingdom.fame}}" data-dtype="Number" />
              </p>
+             <p>
+               <b>Discount</b>
+             </p>
+             <p>
+               <b>Limit</b>
+             </p>
+             <p>
+               <b>Upgrade from</b>
+             </p>
+             <p>
+               <b>Magic items</b>
+             </p>
+             <p>
+               <b>Settlement</b>
+             </p>
+             <p>
+               <b>Special</b>
+             </p>
          </div>
+               <div class="tab description">
+      {{roll-editor content=data.data.kingdom.description target="data.kingdom.description" button=true owner=owner editable=editable}}
+      </div>
      </section>
 </form>

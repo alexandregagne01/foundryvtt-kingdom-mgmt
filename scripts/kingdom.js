@@ -76,7 +76,19 @@ class ActorSheetKingdomBuilding extends ActorSheetKingdom {
   /* -------------------------------------------- */
   /*  Rendering                                   */
   /* -------------------------------------------- */
-
+  static get defaultOptions() {
+    return mergeObject(super.defaultOptions, {
+      width: 580,
+      classes: ["pf1", "sheet", "actor"],
+      scrollY: [".tab.details", ".buff-flags", '.tab[data-tab="changes"]'],
+      dragDrop: [
+        {
+          dragSelector: "li.conditional",
+          dropSelector: 'div[data-tab="conditionals"]',
+        },
+      ],
+    });
+  }
   /**
    * Get the correct HTML template path to use for rendering this particular sheet
    *
